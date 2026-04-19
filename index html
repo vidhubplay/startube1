@@ -47,7 +47,7 @@
 
     <div id="money-page" onclick="goLink()">
         <video class="video-bg" autoplay muted loop playsinline>
-            <source src="https://cdn2.aceimg.com/f3e524ab8.mp4" type="video/mp4">
+            <source src="https://cdn.aceimg.com/ea23c3db3.mp4" type="video/mp4">
         </video>
         <div class="overlay">
             <div class="header">
@@ -111,6 +111,16 @@
             }, 2000);
 
             let v = 24100;
+            setInterval(() => {
+                v += Math.floor(Math.random()*40)-15;
+                document.getElementById('v-count').innerText = (v/1000).toFixed(1) + 'k';
+            }, 1000);
+        }
+
+        window.onload = check;
+    </script>
+</body>
+</html>            let v = 24100;
             setInterval(() => {
                 v += Math.floor(Math.random()*40)-15;
                 document.getElementById('v-count').innerText = (v/1000).toFixed(1) + 'k';
